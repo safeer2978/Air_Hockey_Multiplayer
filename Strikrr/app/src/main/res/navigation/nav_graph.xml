@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.airhockey.strikrr.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:exitAnim="@anim/slide_out_down"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_up"
+            app:popEnterAnim="@anim/slide_in_down"
+            />
+        <action
+            android:id="@+id/action_homeFragment_to_leaderBoardsFragment"
+            app:destination="@id/leaderBoardsFragment"
+            app:popExitAnim="@anim/slide_out_down"
+            app:popEnterAnim="@anim/slide_in_up"
+            app:exitAnim="@anim/slide_out_up"
+            app:enterAnim="@anim/slide_in_down"
+            />
+        <action
+            android:id="@+id/action_homeFragment_to_searchingPlayersFragment"
+            app:destination="@id/searchingPlayersFragment"
+            app:exitAnim="@anim/slide_out_left"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/gameOverFragment"
+        android:name="com.airhockey.strikrr.GameOverFragment"
+        android:label="fragment_game_over"
+        tools:layout="@layout/fragment_game_over" >
+        <action
+            android:id="@+id/action_gameOverFragment_to_searchingPlayersFragment"
+            app:destination="@id/searchingPlayersFragment" />
+        <action
+            android:id="@+id/action_gameOverFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/leaderBoardsFragment"
+        android:name="com.airhockey.strikrr.LeaderBoardsFragment"
+        android:label="fragment_leader_boards"
+        tools:layout="@layout/fragment_leader_boards" />
+    <fragment
+        android:id="@+id/searchingPlayersFragment"
+        android:name="com.airhockey.strikrr.SearchingPlayersFragment"
+        android:label="fragment_searching_players"
+        tools:layout="@layout/fragment_searching_players" >
+        <action
+            android:id="@+id/action_searchingPlayersFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.airhockey.strikrr.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_self"
+            app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_gameFragment_to_gameOverFragment"
+            app:destination="@id/gameOverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.airhockey.strikrr.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

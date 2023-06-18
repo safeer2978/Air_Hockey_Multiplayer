@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "762369180139",
+    "firebase_url": "https://hajmola-60d1d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "hajmola-60d1d",
+    "storage_bucket": "hajmola-60d1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762369180139:android:4d4ff97185f6701a6f59ae",
+        "android_client_info": {
+          "package_name": "com.hajmola"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762369180139-qo4660olvb1la17ucccpe0cgi4hjblfr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXSoCO3qfIB4CdgGkxPlW1BTvuPhaz7MI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762369180139-qo4660olvb1la17ucccpe0cgi4hjblfr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

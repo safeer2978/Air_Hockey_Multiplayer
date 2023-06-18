@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <com.hajmola.GameView
+        android:layout_gravity="center"
+
+        android:id="@+id/game"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <com.hajmola.BallView
+        android:layout_gravity="center"
+        android:background="#000000"
+        android:id="@+id/ball"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+</FrameLayout>
